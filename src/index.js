@@ -1,7 +1,7 @@
-var qtumjs = require('bitcoinjs-lib')
+var htmlcoinjs = require('bitcoinjs-lib')
 
-Object.assign(qtumjs.networks, require('./networks'))
+Object.assign(htmlcoinjs.networks, require('./networks'))
 
-qtumjs.utils = require('./utils')
+htmlcoinjs.utils = require('./utils')
 
-module.exports = qtumjs
+module.exports = htmlcoinjs
