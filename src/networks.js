@@ -1,6 +1,6 @@
 module.exports = {
     htmlcoin: {
-        messagePrefix: 'HTMLCOIN Signed Message:\n',
+        messagePrefix: '\x19HTMLCOIN Signed Message:\n',
         bech32: 'bc',
         bip32: {
             public: 0x0488b21e,
