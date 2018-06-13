@@ -14,6 +14,7 @@ var htmlcoinjs = require('htmlcoinjs-lib')
 
 ## New features
 ### Network
+https://en.bitcoin.it/wiki/List_of_address_prefixes
 ```
 {
     htmlcoin: {
