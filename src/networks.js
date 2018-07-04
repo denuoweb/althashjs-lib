@@ -8,7 +8,7 @@ module.exports = {
         },
         pubKeyHash: 0x29,
         scriptHash: 0x64,
-        wif: 0x80
+        wif: 0xa9
     },
     htmlcoin_testnet: {
         messagePrefix: '\x19Htmlcoin Signed Message:\n',
@@ -19,6 +19,6 @@ module.exports = {
         },
         pubKeyHash: 0x100,
         scriptHash: 0x6e,
-        wif: 0xef
+        wif: 0xee
     }
 }
