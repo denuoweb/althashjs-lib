@@ -1,6 +1,6 @@
 # htmlcoinjs-lib
-This is an extend lib for htmlcoinjs-lib, it supports two new network of htmlcoin-mainnet and htmlcoin-testnet
-It can generate contract creating and sending transactions
+This is an extend library called htmlcoinjs-lib, it supports two networks; htmlcoin-mainnet and htmlcoin-testnet
+It can generate contracts and creating and send transactions
 ## Installation
 ``` bash
 npm install htmlcoinjs-lib
@@ -26,7 +26,7 @@ https://en.bitcoin.it/wiki/List_of_address_prefixes
         },
         pubKeyHash: 0x29,
         scriptHash: 0x64,
-        wif: 0x80
+        wif: 0xa9
     },
     htmlcoin_testnet: {
         messagePrefix: '\x19Htmlcoin Signed Message:\n',
@@ -37,7 +37,7 @@ https://en.bitcoin.it/wiki/List_of_address_prefixes
         },
         pubKeyHash: 0x100,
         scriptHash: 0x6e,
-        wif: 0xef
+        wif: 0xee
     }
 }
 
