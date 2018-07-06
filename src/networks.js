@@ -7,7 +7,7 @@ module.exports = {
             private: 0x04358394
         },
         pubKeyHash: 0x64,
-        scriptHash: 0x6e,
+        scriptHash: 0x64,
         wif: 0xee
     },
     htmlcoin_testnet: {
