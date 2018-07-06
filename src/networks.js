@@ -3,12 +3,12 @@ module.exports = {
         messagePrefix: '\x19HTMLCOIN Signed Message:\n',
         bech32: 'bc',
         bip32: {
-            public: 0x0488b21e,
-            private: 0x0488ade4
+            public: 0x043587cf,
+            private: 0x04358394
         },
-        pubKeyHash: 0x29,
-        scriptHash: 0x64,
-        wif: 0xa9
+        pubKeyHash: 0x64,
+        scriptHash: 0x6e,
+        wif: 0xee
     },
     htmlcoin_testnet: {
         messagePrefix: '\x19Htmlcoin Signed Message:\n',
@@ -17,7 +17,7 @@ module.exports = {
             public: 0x043587cf,
             private: 0x04358394
         },
-        pubKeyHash: 0x100,
+        pubKeyHash: 0x64,
         scriptHash: 0x6e,
         wif: 0xee
     }
