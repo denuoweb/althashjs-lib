@@ -35,7 +35,7 @@ https://en.bitcoin.it/wiki/List_of_address_prefixes
             public: 0x043587cf,
             private: 0x04358394
         },
-        pubKeyHash: 0x100,
+        pubKeyHash: 0x64,
         scriptHash: 0x6e,
         wif: 0xee
     }
