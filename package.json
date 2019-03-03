@@ -21,7 +21,7 @@
   "devDependencies": {},
   "dependencies": {
     "bignumber.js": "^4.1.0",
-    "bitcoinjs-lib": "https://github.com/denuoweb/bitcoinjs-lib.git,
+    "bitcoinjs-lib": "https://github.com/denuoweb/bitcoinjs-lib.git",
     "qtum-opcodes": "^1.0.0",
     "safe-buffer": "^5.1.1"
   }
