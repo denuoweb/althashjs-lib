@@ -15,24 +15,22 @@ var Buffer = require('safe-buffer').Buffer
 function selectTxs(unspentTransactions, amount, fee) {
     //sort the utxo
     var matureList = []
-    var immatureList = []
     for(var i = 0; i < unspentTransactions.length; i++) {
-        if(unspentTransactions[i].confirmations >= 500 || unspentTransactions[i].isStake === false) {
-            matureList[matureList.length] = unspentTransactions[i]
+      if(unspentTransactions[i].isStake === true) {
+        if (unspentTransactions[i].confirmations >= 500) {
+          matureList[matureList.length] = unspentTransactions[i]
         }
-        else {
-            immatureList[immatureList.length] = unspentTransactions[i]
-        }
+      } else {
+        matureList[matureList.length] = unspentTransactions[i]
+      }
     }
     matureList.sort(function(a, b) {return a.value - b.value})
-    immatureList.sort(function(a, b) {return b.confirmations - a.confirmations})
-    unspentTransactions = matureList.concat(immatureList)
 
     var value = new BigNumber(amount).plus(fee).times(1e8)
     var find = []
     var findTotal = new BigNumber(0)
-    for (var i = 0; i < unspentTransactions.length; i++) {
-        var tx = unspentTransactions[i]
+    for (var i = 0; i < matureList.length; i++) {
+        var tx = matureList[i]
         findTotal = findTotal.plus(tx.value)
         find[find.length] = tx
         if (findTotal.greaterThanOrEqualTo(value)) break
