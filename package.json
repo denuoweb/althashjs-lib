@@ -1,6 +1,6 @@
 {
   "name": "htmlcoinjs-lib",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "An extend lib for bitcoinjs-lib, it supports two new network of qtum and qtum-testnet, and it can generate contract creating and sending transactions",
   "main": "src/index.js",
   "repository": {
@@ -21,7 +21,7 @@
   "devDependencies": {},
   "dependencies": {
     "bignumber.js": "^4.1.0",
-    "bitcoinjs-lib": "^3.3.2",
+    "bitcoinjs-lib": "HTMLCOIN/bitcoinjs-lib",
     "qtum-opcodes": "^1.0.0",
     "safe-buffer": "^5.1.1"
   }
