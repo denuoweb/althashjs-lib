@@ -1,7 +1,7 @@
 module.exports = {
     htmlcoin: {
         messagePrefix: '\x15HTMLCOIN Signed Message:\n',
-        bech32: 'bc',
+        bech32: 'hc',
         bip32: {
             public: 0x0488b21e,
             private: 0x0488ade4
@@ -12,7 +12,7 @@ module.exports = {
     },
     htmlcoin_testnet: {
         messagePrefix: '\x15Htmlcoin Signed Message:\n',
-        bech32: 'tb',
+        bech32: 'th',
         bip32: {
             public: 0x043587cf,
             private: 0x04358394
