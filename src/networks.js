@@ -1,6 +1,6 @@
 module.exports = {
     htmlcoin: {
-        messagePrefix: '\x19HTMLCOIN Signed Message:\n',
+        messagePrefix: '\x15HTMLCOIN Signed Message:\n',
         bech32: 'bc',
         bip32: {
             public: 0x0488b21e,
@@ -11,7 +11,7 @@ module.exports = {
         wif: 0xa9
     },
     htmlcoin_testnet: {
-        messagePrefix: '\x19Htmlcoin Signed Message:\n',
+        messagePrefix: '\x15Htmlcoin Signed Message:\n',
         bech32: 'tb',
         bip32: {
             public: 0x043587cf,
