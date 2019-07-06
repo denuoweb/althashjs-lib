@@ -18,8 +18,8 @@ https://en.bitcoin.it/wiki/List_of_address_prefixes
 ```
 {
     htmlcoin: {
-        messagePrefix: '\x19Htmlcoin Signed Message:\n',
-        bech32: 'bc',
+        messagePrefix: '\x15Htmlcoin Signed Message:\n',
+        bech32: 'hc',
         bip32: {
             public: 0x0488b21e,
             private: 0x0488ade4
@@ -29,15 +29,15 @@ https://en.bitcoin.it/wiki/List_of_address_prefixes
         wif: 0xa9
     },
     htmlcoin_testnet: {
-        messagePrefix: '\x19Htmlcoin Signed Message:\n',
-        bech32: 'tb',
+        messagePrefix: '\x15Htmlcoin Signed Message:\n',
+        bech32: 'th',
         bip32: {
             public: 0x043587cf,
             private: 0x04358394
         },
         pubKeyHash: 0x64,
         scriptHash: 0x6e,
-        wif: 0xee
+        wif: 0xef
     }
 }
 
