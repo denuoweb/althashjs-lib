@@ -125,11 +125,11 @@ function buildCreateContractTransaction(keyPair, code, gasLimit, gasPrice, fee, 
  * @param Number gasPrice(unit: 1e-8 HTML/gas)
  * @param Number fee(unit: HTML)
  * @param [transaction] utxoList
+ * @param Number amount
  * @returns String the built tx
  */
-function buildSendToContractTransaction(keyPair, contractAddress, encodedData, gasLimit, gasPrice, fee, utxoList) {
+function buildSendToContractTransaction(keyPair, contractAddress, encodedData, gasLimit, gasPrice, fee, utxoList, amount=0) {
     var from = keyPair.getAddress()
-    var amount = 0
     fee = new BigNumber(gasLimit).times(gasPrice).div(1e8).plus(fee).toNumber()
     var inputs = selectTxs(utxoList, amount, fee)
     var tx = new bitcoinjs.TransactionBuilder(keyPair.network)
@@ -147,9 +147,10 @@ function buildSendToContractTransaction(keyPair, contractAddress, encodedData, g
         hex2Buffer(contractAddress),
         OPS.OP_CALL
     ])
-    tx.addOutput(contract, 0)
-    if (totalValue.minus(sendFee).toNumber() > 0) {
-        tx.addOutput(from, totalValue.minus(sendFee).toNumber())
+    var sendAmount = new BigNumber(amount).times(1e8).toNumber()
+    tx.addOutput(contract, sendAmount)
+    if (totalValue.minus(sendFee).minus(sendAmount).toNumber() > 0) {
+        tx.addOutput(from, totalValue.minus(sendFee).minus(sendAmount).toNumber())
     }
     for (var i = 0; i < inputs.length; i++) {
         tx.sign(i, keyPair)
