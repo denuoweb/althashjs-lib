@@ -149,7 +149,7 @@ function buildSendToContractTransaction(keyPair, contractAddress, encodedData, g
     ])
     var sendAmount = new BigNumber(amount).times(1e8).toNumber()
     tx.addOutput(contract, sendAmount)
-    if (totalValue.minus(sendFee).minus(sendAmount).toNumber() > 0) {
+    if (totalValue.minus(sendFee).minus(sendAmount).toNumber() > 0.00072799) {
         tx.addOutput(from, totalValue.minus(sendFee).minus(sendAmount).toNumber())
     }
     for (var i = 0; i < inputs.length; i++) {
