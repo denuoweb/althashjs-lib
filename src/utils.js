@@ -1,6 +1,6 @@
 var bitcoinjs = require('bitcoinjs-lib')
 var BigNumber = require('bignumber.js')
-var OPS = require('qtum-opcodes')
+var OPS = require('htmlcoin-opcodes')
 var Buffer = require('safe-buffer').Buffer
 
 /**
