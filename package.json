@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/htmlcoin/althashjs-lib.git"
+    "url": "git+https://github.com/htmlcoin/htmlcoinjs-lib.git"
   },
   "keywords": [
     "htmlcoin",
@@ -17,9 +17,9 @@
   "author": "Qtum Weiyu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/htmlcoin/althashjs-lib/issues"
+    "url": "https://github.com/htmlcoin/htmlcoinjs-lib/issues"
   },
-  "homepage": "https://github.com/htmlcoin/althashjs-lib#readme",
+  "homepage": "https://github.com/htmlcoin/htmlcoinjs-lib#readme",
   "devDependencies": {},
   "dependencies": {
     "bignumber.js": "^8.1.1",
