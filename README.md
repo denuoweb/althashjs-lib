@@ -1,15 +1,15 @@
-# htmlcoinjs-lib
-This is an extend library called htmlcoinjs-lib, it supports two networks; htmlcoin-mainnet and htmlcoin-testnet
+# althashjs-lib
+This is an extend library called althashjs-lib, it supports two networks; althash-mainnet and althash-testnet
 It can generate contracts and creating and send transactions
 ## Installation
 ``` bash
-npm install htmlcoinjs-lib
+npm install althashjs-lib
 ```
 
 ## Setup
 ### Node.js
 ``` javascript
-var htmlcoinjs = require('htmlcoinjs-lib')
+var althashjs = require('althashjs-lib')
 ```
 
 ## New features
@@ -17,7 +17,7 @@ var htmlcoinjs = require('htmlcoinjs-lib')
 https://en.bitcoin.it/wiki/List_of_address_prefixes
 ```
 {
-    htmlcoin: {
+    althash: {
         messagePrefix: '\x15Htmlcoin Signed Message:\n',
         bech32: 'hc',
         bip32: {
@@ -28,7 +28,7 @@ https://en.bitcoin.it/wiki/List_of_address_prefixes
         scriptHash: 0x64,
         wif: 0xa9
     },
-    htmlcoin_testnet: {
+    althash_testnet: {
         messagePrefix: '\x15Htmlcoin Signed Message:\n',
         bech32: 'th',
         bip32: {
