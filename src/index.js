@@ -1,7 +1,7 @@
-var htmlcoinjs = require('bitcoinjs-lib')
+var althashjs = require('bitcoinjs-lib')
 
-Object.assign(htmlcoinjs.networks, require('./networks'))
+Object.assign(althashjs.networks, require('./networks'))
 
-htmlcoinjs.utils = require('./utils')
+althashjs.utils = require('./utils')
 
-module.exports = htmlcoinjs
+module.exports = althashjs
