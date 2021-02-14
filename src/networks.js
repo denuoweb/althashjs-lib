@@ -3,15 +3,15 @@ module.exports = {
         messagePrefix: '\x15HTMLCOIN Signed Message:\n',
         bech32: 'hc',
         bip32: {
-            public: 0x0488b21e,
-            private: 0x0488ade4
+            public: 0x1397c10d,
+            private: 0x1397BCF3
         },
         pubKeyHash: 0x29,
         scriptHash: 0x64,
         wif: 0xa9
     },
     althash_testnet: {
-        messagePrefix: '\x15Htmlcoin Signed Message:\n',
+        messagePrefix: '\x15HTMLCOIN Signed Message:\n',
         bech32: 'th',
         bip32: {
             public: 0x043587cf,
