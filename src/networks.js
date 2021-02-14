@@ -1,5 +1,5 @@
 module.exports = {
-    htmlcoin: {
+    althash: {
         messagePrefix: '\x15HTMLCOIN Signed Message:\n',
         bech32: 'hc',
         bip32: {
@@ -10,7 +10,7 @@ module.exports = {
         scriptHash: 0x64,
         wif: 0xa9
     },
-    htmlcoin_testnet: {
+    althash_testnet: {
         messagePrefix: '\x15Htmlcoin Signed Message:\n',
         bech32: 'th',
         bip32: {
