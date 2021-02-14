@@ -1,23 +1,25 @@
 {
-  "name": "htmlcoinjs-lib",
-  "version": "0.1.10",
-  "description": "An extend lib for bitcoinjs-lib, it supports two new network of htmlcoin and htmlcoin-testnet, and it can generate contract creating and sending transactions",
+  "name": "althashjs-lib",
+  "version": "0.0.8",
+  "description": "An extend lib for bitcoinjs-lib, it supports two new network of althash and althash-testnet, and it can generate contract creating and sending transactions",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/htmlcoin/htmlcoinjs-lib.git"
+    "url": "git+https://github.com/htmlcoin/althashjs-lib.git"
   },
   "keywords": [
     "htmlcoin",
     "htmlcoinjs",
+    "althash",
+    "althashjs",
     "smart contract"
   ],
-  "author": "HTMLCOIN",
+  "author": "Qtum Weiyu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/htmlcoin/htmlcoinjs-lib/issues"
+    "url": "https://github.com/htmlcoin/althashjs-lib/issues"
   },
-  "homepage": "https://github.com/htmlcoin/htmlcoinjs-lib#readme",
+  "homepage": "https://github.com/htmlcoin/althashjs-lib#readme",
   "devDependencies": {},
   "dependencies": {
     "bignumber.js": "^8.1.1",
